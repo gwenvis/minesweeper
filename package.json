@@ -1,0 +1,28 @@
+{
+  "name": "coolsweeper",
+  "version": "1.0.0",
+  "description": "Minesweeper but cool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --open --mode development"
+  },
+  "author": "Antonio Bottelier",
+  "license": "ISC",
+  "dependencies": {
+    "require": "^2.4.20",
+    "webpack": "^4.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.9.4",
+    "@types/random-js": "^1.0.31",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^4.3.1",
+    "random-js": "^1.0.8",
+    "ts-loader": "^5.1.0",
+    "typescript": "^3.0.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
+  }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>big boiy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #0F7174;
+        }
+
+        .handle {
+            background-color: #0E0270;
+            background-image: linear-gradient(90deg, #0E0270, #3678A7);
+            margin-bottom: 1px;
+            height:20px;
+            width:inherit;
+            color: white;
+            padding:2.5px;
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+
+        .window {
+            padding: 2px;
+            background-color: #F9F6FF;
+            box-shadow: 2px 2px 1px 2px black;
+            height:auto;
+            width:auto;
+            position:absolute;
+            padding-bottom:2px;
+            margin-bottom:2px;
+        }   
+
+        canvas {
+            margin: 0;
+            padding: 0;
+        }
+
+        .handle img {
+            float:right;
+            margin-right:2px;
+            width:18px;
+            right:5px;
+            position:absolute;
+        }
+    </style>
+</head>
+<body oncontextmenu="return false">
+
+    <div class="window">
+        <div id="handle" class="handle">
+            Minesweemper
+            <img id="close" src=<%= require('./img/x.png') %>/>
+        </div>
+
+        <div id="game">
+
+        </div>
+    </div>
+
+    <img hidden id="spritesheet" src=<%= require("./img/spritesheet.png") %>>
+</body>
+</html>
