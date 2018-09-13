@@ -1,6 +1,6 @@
 import { Grid, spritesheet } from "./grid";
 
-const cols = 25, rows = 15, bombs = 70, tileWidth = 16,tileHeight=16;
+const cols = 30, rows = 20, bombs = 99, tileWidth = 16,tileHeight=16;
 let context:CanvasRenderingContext2D, grid:Grid, canvas;
 let offsetLeft, offsetTop;
 
@@ -66,9 +66,16 @@ function close() {
     document.body.innerHTML = "";
 }
 
-spritesheet.onload = function () {
+if(spritesheet.complete) {
     startGame();
 }
+else{
+    spritesheet.onload = function () {
+        startGame();
+    }
+}
+
+
 
 // handle thingy
 

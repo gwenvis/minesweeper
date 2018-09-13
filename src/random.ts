@@ -1,4 +1,3 @@
-
 const randomjs = require("random-js")();
 
 export class RandomGenerator
