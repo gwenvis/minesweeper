@@ -11,3 +11,7 @@ You _dont_ actually use it but ehh, if you want to play it, do it like this:
   3. write `npm start` to launch and play the game. It will automatically open a browser for you.
   
 To play again, refresh the page, there's also no win and lose condition.
+
+# Play
+
+Or just go here: http://www.stepperman.me/minesweeper
